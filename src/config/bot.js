@@ -195,123 +195,104 @@ export const botConfig = {
   shop: {
     
   },
-
-  // =========================
-  // TICKET SYSTEM
-  // =========================
-  tickets: {
-    // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
-
-    // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
-
-    // Priority options users/staff can assign.
-    priorities: {
-      none: {
-        emoji: "⚪",
-        color: "#95A5A6",
-        label: "None",
-      },
-      low: {
-        emoji: "🟢",
-        color: "#2ECC71",
-        label: "Low",
-      },
-      medium: {
-        emoji: "🟡",
-        color: "#F1C40F",
-        label: "Medium",
-      },
-      high: {
-        emoji: "🔴",
-        color: "#E74C3C",
-        label: "High",
-      },
-      urgent: {
-        emoji: "🚨",
-        color: "#E91E63",
-        label: "Urgent",
-      },
-    },
-
-    // Default priority for new tickets.
-    defaultPriority: "none",
-
-    // Category ID where closed tickets are archived.
-    archiveCategory: null,
-
-    // Channel ID where ticket logs are sent.
-    logChannel: null,
-  },
   
- // =========================
- // TICKET PANELS
- // =========================
-    panels: {
-      enabled: true,
+  // =========================
+  // TICKETS
+  // =========================
+  
+tickets: {
+  // Category ID where new tickets are created (null = no forced category).
+  defaultCategory: 1462263625325609043,
 
-      defaultPanel: {
-        title: "Open a Ticket",
-        description:
-          "Need help? Select a ticket type below and our team will assist you as soon as possible.",
-        color: "#49c5e4",
-        thumbnail: null,
-        footer: "Titan Bot Ticket System",
+  // Role IDs allowed to manage/support tickets.
+  supportRoles: [1396205401397006336],
+
+  // Priority options users/staff can assign.
+  priorities: {
+    none: {
+      emoji: "⚪",
+      color: "#95A5A6",
+      label: "None",
+    },
+    low: {
+      emoji: "🟢",
+      color: "#2ECC71",
+      label: "Low",
+    },
+    medium: {
+      emoji: "🟡",
+      color: "#F1C40F",
+      label: "Medium",
+    },
+    high: {
+      emoji: "🔴",
+      color: "#E74C3C",
+      label: "High",
+    },
+    urgent: {
+      emoji: "🚨",
+      color: "#E91E63",
+      label: "Urgent",
+    },
+  },
+
+  // Default priority for new tickets.
+  defaultPriority: "none",
+
+  // Category ID where closed tickets are archived.
+  archiveCategory: null,
+
+  // Channel ID where ticket logs are sent.
+  logChannel: 1396063917742100591,
+
+  // Ticket panel system.
+  panels: {
+    enabled: true,
+
+    defaultPanel: {
+      title: "Open a Ticket",
+      description:
+        "Need help? Select a ticket type below and our team will assist you as soon as possible.",
+      color: "#49c5e4",
+      footer: "Esoteric's Community",
+    },
+
+    components: {
+      placeholder: "Choose a ticket type",
+    },
+
+    ticketTypes: {
+      general_support: {
+        label: "General Support",
+        description: "Questions, help, or general assistance",
+        emoji: "📩",
+        channelName: "support-{user}",
+        priority: "none",
       },
-
-      components: {
-        useSelectMenu: true,
-        useButtons: false,
-        placeholder: "Choose a ticket type",
+      payouts_rewards: {
+        label: "Payouts & Rewards",
+        description: "Claim giveaways, prizes, or rewards",
+        emoji: "💰",
+        channelName: "payout-{user}",
+        priority: "medium",
       },
-
-      ticketTypes: {
-        general_support: {
-          label: "General Support",
-          description: "Questions, help, or general assistance",
-          emoji: "📩",
-          channelName: "support-{user}",
-          categoryId: null,
-          supportRoles: [],
-          priority: "none",
-        },
-        payouts_rewards: {
-          label: "Payouts & Rewards",
-          description: "Claim giveaways, prizes, or rewards",
-          emoji: "💰",
-          channelName: "payout-{user}",
-          categoryId: null,
-          supportRoles: [],
-          priority: "medium",
-        },
-        partnerships: {
-          label: "Partnerships",
-          description: "Alliance and partnership requests",
-          emoji: "🤝",
-          channelName: "partner-{user}",
-          categoryId: null,
-          supportRoles: [],
-          priority: "low",
-        },
-        content_creator: {
-          label: "Content Creator",
-          description: "Apply for creator-related roles or perks",
-          emoji: "🎥",
-          channelName: "creator-{user}",
-          categoryId: null,
-          supportRoles: [],
-          priority: "low",
-        },
+      partnerships: {
+        label: "Partnerships",
+        description: "Alliance and partnership requests",
+        emoji: "🤝",
+        channelName: "partner-{user}",
+        priority: "low",
       },
-
-      messages: {
-        panelPosted: "✅ Ticket panel has been posted.",
-        panelUpdated: "🔄 Ticket panel has been updated.",
-        panelDisabled: "❌ Ticket panels are currently disabled.",
+      content_creator: {
+        label: "Content Creator",
+        description: "Apply for creator-related roles or perks",
+        emoji: "🎥",
+        channelName: "creator-{user}",
+        priority: "low",
       },
     },
   },
+},
 
   // =========================
   // GIVEAWAY SETTINGS
