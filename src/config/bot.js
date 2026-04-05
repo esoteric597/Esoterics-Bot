@@ -25,7 +25,7 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Serving 1,000+ members",
+        name: "Serving Esoteric’s Community 👑 | 1,000+ Members",
         // Activity type number (0 = Playing).
         type: 4, 
       },
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Esoteric's Community",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -201,10 +201,10 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: 1462263625325609043,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [1396205401397006336],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -242,7 +242,7 @@ export const botConfig = {
     archiveCategory: null,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1396063917742100591,
   },
 
   // =========================
@@ -264,7 +264,7 @@ export const botConfig = {
     maximumDuration: 2592000000, 
 
     // Role IDs allowed to host giveaways.
-    allowedRoles: [],
+    allowedRoles: [1470589959713984686],
 
     // Role IDs that bypass giveaway restrictions.
     bypassRoles: [],
@@ -275,10 +275,10 @@ export const botConfig = {
   // =========================
   birthday: {
     // Role ID given to users on their birthday.
-    defaultRole: null,
+    defaultRole: 1490200805658202185,
 
     // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
+    announcementChannel: 1490201328411213915,
 
     // Timezone used to calculate birthday dates.
     timezone: "PST",
