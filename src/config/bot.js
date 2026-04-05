@@ -383,17 +383,17 @@ export const botConfig = {
     defaults: {
       // Default naming/description templates for counter entries.
       name: "{name} Counter",
-      description: "Server {name} counter",
+      description: "Esoteric’s Community {name} counter",
       // Channel type used for counters (typically "voice").
       type: "voice",
       // Channel name format. `{count}` is replaced automatically.
-      channelName: "{name}-{count}",
+      channelName: "📊┃{name}-{count}",
     },
     permissions: {
       // Default denied permissions for the counter channel.
-      deny: ["VIEW_CHANNEL"],
+      deny: ["CONNECT","SPEAK"],
       // Default allowed permissions for the counter channel.
-      allow: ["VIEW_CHANNEL", "CONNECT", "SPEAK"],
+      allow: ["VIEW_CHANNEL"],
     },
     messages: {
       // Default response messages for counter actions.
@@ -404,7 +404,7 @@ export const botConfig = {
     types: {
       // Built-in counter types and how each count is calculated.
       members: {
-        name: "👥 Members",
+        name: "👥 All Members",
         description: "Total members in the server",
         getCount: (guild) => guild.memberCount.toString(),
       },
@@ -415,7 +415,7 @@ export const botConfig = {
           guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
       members_only: {
-        name: "👤 Humans",
+        name: "👤 Members",
         description: "Total human members (non-bots)",
         getCount: (guild) =>
           guild.members.cache.filter((m) => !m.user.bot).size.toString(),
