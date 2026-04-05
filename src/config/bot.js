@@ -56,9 +56,15 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+       { question: "What is your Discord username?", required: true },
+       { question: "How old are you?", required: true },
+       { question: "What timezone are you in?", required: true },
+       { question: "How active are you daily/weekly?", required: true },
+       { question: "Do you have any past staff experience? If yes, explain.", required: true },
+       { question: "Why do you want to join Esoteric’s Community Staff Team?", required: true },
+       { question: "Which department are you more interested in: Media or Relations?", required: true },
+       { question: "How would you handle a rude or disrespectful member?", required: true },
+       { question: "Why should we choose you over other applicants?", required: true },
     ],
 
     // Embed colors by application status.
