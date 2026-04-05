@@ -8,7 +8,7 @@ export const botConfig = {
     status: "online",
     activities: [
       {
-        name: "Serving Esoteric’s Community 👑 | 1,000+ Members",
+        name: "Assisting Esoteric’s Community 👑 | 1,000+ Members",
         type: 4,
       },
     ],
