@@ -365,15 +365,15 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Ello Ello {user}! 👋 Welcome to Esoteric’s Community. We now got {memberCount} members!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user} dipped 😔 We now got {memberCount} members left.",
     // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
+    defaultWelcomeChannel: 1490207813044011169,
     // Channel ID for goodbye messages.
-    defaultGoodbyeChannel: null,
+    defaultGoodbyeChannel: 1490207825224536247,
   },
 
   // =========================
@@ -427,13 +427,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "You ain’t got permission for this twin ❌",
+    cooldownActive: "Chill 😭 wait {time} before using this again.",
+    errorOccurred: "Something went wrong icl 💀 try again.",
     missingPermissions:
-      "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+      "I’m missing perms to do that 😭",
+    commandDisabled: "This command disabled rn.",
+    maintenanceMode: "Bot under maintenance 🛠️",
   },
 
   // =========================
