@@ -38,7 +38,7 @@ export const botConfig = {
   commands: {
     // Bot owner user IDs (comma-separated in OWNER_IDS env var).
     // Owners can access owner/admin-level bot commands.
-    owners: process.env.OWNER_IDS?.split(",") || [],
+    owners: ["1183147577957437524", "563871965107060757"],
 
     // Default wait time between command uses (in seconds).
     defaultCooldown: 3, 
@@ -142,7 +142,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Esoteric's Community",
+      text: "Esoteric’s Community • Powered by Eso",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -150,8 +150,8 @@ export const botConfig = {
     thumbnail: null,
     author: {
       // Optional default embed author block.
-      name: null,
-      icon: null,
+      name: "Esoteric’s Community",
+      icon: "https://discord.gg/esoteric597",
       url: null,
     },
   },
