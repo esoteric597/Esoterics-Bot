@@ -75,11 +75,11 @@ export const botConfig = {
     deleteDeniedAfter: 7,
     deleteApprovedAfter: 30,
 
-    managerRoles: ["MANAGER_ROLE_ID", "ADMIN_ROLE_ID"],
+    managerRoles: ["1470589959713984686", "1463489255862177959"],
 
-    logChannelId: "APPLICATION_LOG_CHANNEL_ID",
-    reviewChannelId: "APPLICATION_REVIEW_CHANNEL_ID",
-    resultsChannelId: "APPLICATION_RESULTS_CHANNEL_ID",
+    logChannelId: "1490216123516583977",
+    reviewChannelId: "1490216149047185609",
+    resultsChannelId: "1490216175681147032",
 
     statuses: ["pending", "underReview", "interview", "approved", "denied"],
 
@@ -140,14 +140,14 @@ export const botConfig = {
 
     footer: {
       text: "Esoteric’s Community • Powered by Eso",
-      icon: "https://YOUR_LOGO_LINK.png",
+      icon: null,
     },
 
-    thumbnail: "https://YOUR_LOGO_LINK.png",
+    thumbnail: null,
 
     author: {
       name: "Esoteric’s Community",
-      icon: "https://YOUR_LOGO_LINK.png",
+      icon: null,
       url: "https://discord.gg/esoteric597",
     },
   },
@@ -182,8 +182,8 @@ export const botConfig = {
   // TICKET SYSTEM
   // =========================
   tickets: {
-    defaultCategory: "TICKET_CATEGORY_ID",
-    supportRoles: ["MOD_ROLE_ID", "ADMIN_ROLE_ID", "MANAGER_ROLE_ID"],
+    defaultCategory: "1462263625325609043",
+    supportRoles: ["1465531172665688154", "1396203898674352308", "1463489255862177959"],
 
     priorities: {
       none: {
@@ -214,8 +214,8 @@ export const botConfig = {
     },
 
     defaultPriority: "none",
-    archiveCategory: "ARCHIVE_CATEGORY_ID",
-    logChannel: "TICKET_LOG_CHANNEL_ID",
+    archiveCategory: null,
+    logChannel: "1396063917742100591",
   },
 
   // =========================
@@ -227,16 +227,16 @@ export const botConfig = {
     maximumWinners: 10,
     minimumDuration: 300000,
     maximumDuration: 2592000000,
-    allowedRoles: ["EVENT_ROLE_ID", "ADMIN_ROLE_ID"],
-    bypassRoles: ["OWNER_ROLE_ID"],
+    allowedRoles: ["1470589959713984686", "1463489255862177959"],
+    bypassRoles: ["1470589959713984686"],
   },
 
   // =========================
   // BIRTHDAY SETTINGS
   // =========================
   birthday: {
-    defaultRole: "BIRTHDAY_ROLE_ID",
-    announcementChannel: "BIRTHDAY_CHANNEL_ID",
+    defaultRole: "1490200805658202185",
+    announcementChannel: "1490201328411213915",
     timezone: "PST",
   },
 
@@ -284,8 +284,8 @@ export const botConfig = {
       "Ello Ello {user}! 👋 Welcome to Esoteric’s Community — we now got {memberCount} members!",
     defaultGoodbyeMessage:
       "{user} dipped 😔 — we now got {memberCount} members left.",
-    defaultWelcomeChannel: "WELCOME_CHANNEL_ID",
-    defaultGoodbyeChannel: "GOODBYE_CHANNEL_ID",
+    defaultWelcomeChannel: "1490207813044011169",
+    defaultGoodbyeChannel: "1490207825224536247",
   },
 
   // =========================
@@ -337,25 +337,25 @@ export const botConfig = {
     roles: {
       owner: ["1183147577957437524"],
       coOwner: ["563871965107060757"],
-      manager: ["MANAGER_ROLE_ID"],
-      admin: ["ADMIN_ROLE_ID"],
-      mod: ["MOD_ROLE_ID"],
-      trialMod: ["TRIAL_MOD_ROLE_ID"],
+      manager: ["1463489255862177959"],
+      admin: ["1396203898674352308"],
+      mod: ["1465531172665688154"],
+      trialMod: ["1487281018481414174"],
     },
 
     hierarchy: ["trialMod", "mod", "admin", "manager", "coOwner", "owner"],
 
     staffTickets: {
       enabled: true,
-      categoryId: "STAFF_TICKET_CATEGORY_ID",
-      logChannelId: "STAFF_TICKET_LOG_CHANNEL_ID",
+      categoryId: "1484707736028581916",
+      logChannelId: "1484708223758893086",
       allowedRoles: ["MANAGER_ROLE_ID", "ADMIN_ROLE_ID", "OWNER_ROLE_ID"],
     },
 
     orientation: {
       enabled: true,
       required: true,
-      logChannelId: "ORIENTATION_LOG_CHANNEL_ID",
+      logChannelId: "1469150868371804295",
       reminderHours: 24,
       message:
         "Welcome to the staff team! You must attend orientation before beginning your trial period.",
@@ -363,11 +363,11 @@ export const botConfig = {
 
     trialSystem: {
       enabled: true,
-      roleId: "TRIAL_MOD_ROLE_ID",
+      roleId: "1487281018481414174",
       durationDays: 7,
       autoPromoteOnPass: false,
       autoRemoveOnFail: false,
-      logChannelId: "TRIAL_LOG_CHANNEL_ID",
+      logChannelId: "1469150868371804295",
       requirements: {
         minimumMessages: 30,
         mustAttendOrientation: true,
@@ -378,7 +378,7 @@ export const botConfig = {
 
     promotions: {
       enabled: true,
-      logChannelId: "PROMOTION_LOG_CHANNEL_ID",
+      logChannelId: "1469150868371804295",
       requirements: {
         modToAdmin: {
           minimumMessagesPerWeek: 30,
@@ -395,9 +395,9 @@ export const botConfig = {
 
     loa: {
       enabled: true,
-      channelId: "LOA_CHANNEL_ID",
-      logChannelId: "LOA_LOG_CHANNEL_ID",
-      approvalRoles: ["MANAGER_ROLE_ID", "OWNER_ROLE_ID"],
+      channelId: "1469150868371804295",
+      logChannelId: "1469150868371804295",
+      approvalRoles: ["1470589959713984686", "1463489255862177959"],
       maxDays: 14,
       requireReason: true,
       autoExpire: true,
@@ -405,7 +405,7 @@ export const botConfig = {
 
     strikes: {
       enabled: true,
-      logChannelId: "STRIKE_LOG_CHANNEL_ID",
+      logChannelId: "1469150868371804295",
       maxStrikesBeforeTermination: 3,
       resetOnPolicyUpdate: false,
       reasons: [
@@ -429,7 +429,7 @@ export const botConfig = {
 
       requirements: {
         trialMod: {
-          messagesPerWeek: 20,
+          messagesPerWeek: null,
         },
         mod: {
           messagesPerWeek: 30,
@@ -452,27 +452,27 @@ export const botConfig = {
       notices: {
         enabled: true,
         maxNoticesBeforeStrike: 2,
-        logChannelId: "ACTIVITY_NOTICE_LOG_CHANNEL_ID",
+        logChannelId: "1469150868371804295",
       },
     },
 
     blacklist: {
       enabled: true,
-      logChannelId: "BLACKLIST_LOG_CHANNEL_ID",
+      logChannelId: "1469150868371804295",
       appealAllowed: true,
       appealWaitDays: 14,
     },
 
     appeals: {
       enabled: true,
-      channelId: "APPEAL_CHANNEL_ID",
-      formLink: "APPEAL_FORM_LINK_HERE",
+      channelId: "1469150868371804295",
+      formLink: "1469150868371804295",
     },
 
     logs: {
-      staffActionsChannelId: "STAFF_ACTIONS_LOG_CHANNEL_ID",
-      moderationChannelId: "MOD_LOG_CHANNEL_ID",
-      applicationChannelId: "APPLICATION_LOG_CHANNEL_ID",
+      staffActionsChannelId: "1469150868371804295",
+      moderationChannelId: "1469150868371804295",
+      applicationChannelId: "1469150868371804295",
     },
   },
 
