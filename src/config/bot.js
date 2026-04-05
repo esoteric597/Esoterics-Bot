@@ -244,6 +244,74 @@ export const botConfig = {
     // Channel ID where ticket logs are sent.
     logChannel: null,
   },
+  
+ // =========================
+ // TICKET PANELS
+ // =========================
+    panels: {
+      enabled: true,
+
+      defaultPanel: {
+        title: "Open a Ticket",
+        description:
+          "Need help? Select a ticket type below and our team will assist you as soon as possible.",
+        color: "#49c5e4",
+        thumbnail: null,
+        footer: "Titan Bot Ticket System",
+      },
+
+      components: {
+        useSelectMenu: true,
+        useButtons: false,
+        placeholder: "Choose a ticket type",
+      },
+
+      ticketTypes: {
+        general_support: {
+          label: "General Support",
+          description: "Questions, help, or general assistance",
+          emoji: "📩",
+          channelName: "support-{user}",
+          categoryId: null,
+          supportRoles: [],
+          priority: "none",
+        },
+        payouts_rewards: {
+          label: "Payouts & Rewards",
+          description: "Claim giveaways, prizes, or rewards",
+          emoji: "💰",
+          channelName: "payout-{user}",
+          categoryId: null,
+          supportRoles: [],
+          priority: "medium",
+        },
+        partnerships: {
+          label: "Partnerships",
+          description: "Alliance and partnership requests",
+          emoji: "🤝",
+          channelName: "partner-{user}",
+          categoryId: null,
+          supportRoles: [],
+          priority: "low",
+        },
+        content_creator: {
+          label: "Content Creator",
+          description: "Apply for creator-related roles or perks",
+          emoji: "🎥",
+          channelName: "creator-{user}",
+          categoryId: null,
+          supportRoles: [],
+          priority: "low",
+        },
+      },
+
+      messages: {
+        panelPosted: "✅ Ticket panel has been posted.",
+        panelUpdated: "🔄 Ticket panel has been updated.",
+        panelDisabled: "❌ Ticket panels are currently disabled.",
+      },
+    },
+  },
 
   // =========================
   // GIVEAWAY SETTINGS
